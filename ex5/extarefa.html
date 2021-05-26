@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>EM QUE PAÍS VC NASCEU?</h1>
+    <input type="search" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = 'res'></div>
+    
+   
+   <script>
+    function verificar (){
+        var pais = document.querySelector('input#pais')
+        var res = document.querySelector('div#res') 
+        var vel = (pais.value)
+       
+        if (vel == 'Brasil'){
+            res.innerHTML ='voce é brasileiro'
+        }else{
+            res.innerHTML = 'voce é estrangeiro'
+        }
+    }
+    </script>
+</body>
+</html>
